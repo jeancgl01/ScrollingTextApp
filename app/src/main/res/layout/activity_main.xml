@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/zidane" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Overline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Noticias > Futbol"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Zinedine Zidane deja al Real Madrid"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/sriracha" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="MADRID — Zinedine Zidane anunció el jueves que dejará su cargo de director técnico en el Real Madrid después de dos temporadas y media con el club español.  El sorpresivo anuncio se produce menos de una semana después de que Zidane llevara al Madrid a su tercer título consecutivo de la Liga de Campeones.  El técnico dijo el jueves que sentía que era el momento adecuado, para él y para el club, para hacer un cambio.  Zidane ganó nueve títulos como entrenador del Madrid, incluidas las tres Ligas de Campeones, uno de la Liga española, una Supercopa de España, dos Supercopas de la UEFA y dos Copas Mundiales de Clubes.  Zidane, de 45 años, fue contratado en enero de 2016 para el que fue su primer trabajo importante como técnico. El exjugador estrella llegó rodeado de dudas debido a su falta de experiencia como entrenador, pero superó rápidamente las expectativas."
+                android:typeface="serif" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
